@@ -1,6 +1,8 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using HomeWorkoutApp.Models;
+using HomeWorkoutApp.Views;
 
 namespace HomeWorkoutApp
 {
@@ -10,8 +12,9 @@ namespace HomeWorkoutApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new StartPage();
         }
+          public User CurrentUser { get; set; }
         public static bool IsDevEnv
         {
             get

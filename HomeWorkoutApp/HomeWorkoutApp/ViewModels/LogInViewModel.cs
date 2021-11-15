@@ -7,28 +7,101 @@ using HomeWorkoutApp.Views;
 using System.ComponentModel;
 using HomeWorkoutApp.Services;
 using HomeWorkoutApp.Models;
+using HomeWorkoutApp.ViewModels;
+using System.Runtime.CompilerServices;
 namespace HomeWorkoutApp.ViewModels
 {
-    class LogInViewModel : INotifyPropertyChanged
+    class LogInViewModel : BaseViewModels
     {
-        //updates views and viewmodels. when changing variables it updates
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-        public Command RegisterCommand { protected set; get; }
-        public Command LoginCommand { protected set; get; }
 
+        #region Properties
+        private string email;
+
+        public string Email
+        {
+            get => email;
+            set
+            {
+                if (value != email)
+                {
+                    email = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private string password;
+
+        public string Password
+        {
+            get => password;
+            set
+            {
+                if (value != password)
+                {
+                    password = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        private string status;
+
+        public string Status
+        {
+            get => status;
+            set
+            {
+                if (value != status)
+                {
+                    status = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        #endregion
+
+        #region Commands
+
+        public ICommand LoginCommand { get; set; }
+
+        public ICommand ToSignUpCommand { get; set; }
+
+        public ICommand ToForgotPassCommand { get; set; }
+        #endregion
         public LogInViewModel()
         {
-            EmailError = "Must be a valid email address";
-
-            this.LoginCommand = new Command(() => Login());
-            this.RegisterCommand = new Command(() => Register());
-
-           HomeWorkoutAPIProxy.CreateProxy();
+            Email = string.Empty;
+            Password = string.Empty;
+            Status = string.Empty;
+            LoginCommand = new Command(Login);
+            //ToSignUpCommand = new Command(ToSignUp);
+            //ToForgotPassCommand = new Command(ToForgotPass);
         }
+
+        private async void Login()
+        {
+            HomeWorkoutAPIProxy proxy = HomeWorkoutAPIProxy.CreateProxy();
+            try
+            {
+                User u = await proxy.LoginAsync(Email, Password);
+                Status = "Loging you in....";
+                if (u != null)
+                {
+                    ((App)App.Current).CurrentUser = u;
+                    Push?.Invoke(new StartPage());
+                }
+            }
+            catch (Exception)
+            {
+                Status = "Something went wrong...";
+            }
+        }
+
+        #region Events
+
+        public event Action<Page> Push;
+
+        #endregion
 
 
 
