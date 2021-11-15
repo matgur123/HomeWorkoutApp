@@ -27,13 +27,4 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Views\LogIn.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </None>
-    <None Update="Views\StartPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </None>
-  </ItemGroup>
 </Project>
