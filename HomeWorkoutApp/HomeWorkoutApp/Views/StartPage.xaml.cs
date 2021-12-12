@@ -16,5 +16,9 @@ namespace HomeWorkoutApp.Views
         {
             InitializeComponent();
         }
+        void OnButtonClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync( new LogIn());
+        }
     }
 }

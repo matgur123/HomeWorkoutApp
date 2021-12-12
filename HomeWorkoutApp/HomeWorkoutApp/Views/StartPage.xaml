@@ -9,6 +9,15 @@
                 <StackLayout>
                     <Image Source="StartPAgemIDDLE.jpg"/>
                 </StackLayout>
+                <Button Text="Click me"
+        Clicked="OnButtonClicked"
+        TextColor="Blue"
+        BackgroundColor="Aqua"
+        BorderColor="Red"
+        BorderWidth="5"
+        CornerRadius="5"
+        WidthRequest="150"
+        HeightRequest="75" />
             </StackLayout>
       
         </ScrollView>
