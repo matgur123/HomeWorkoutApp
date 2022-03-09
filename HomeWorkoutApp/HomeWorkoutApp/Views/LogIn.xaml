@@ -48,7 +48,7 @@
                 </Frame>
 
                 <Button  Text="Forgot your password?" FontFamily="Uchen" FontSize="8" TextColor="#4860DE" FontAttributes="Bold"  
-                    VerticalOptions="CenterAndExpand" BackgroundColor="Transparent"
+                     VerticalOptions="CenterAndExpand" BackgroundColor="Transparent"
                     HorizontalOptions="CenterAndExpand" Grid.Row="4" />
 
                 <Button BackgroundColor="#6482EE" HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand" WidthRequest="100" HeightRequest="30" Grid.Row="5" Command="{Binding LoginCommand}" Text="Sign In" FontSize="8" FontFamily="Secular One" FontAttributes="Bold"/>
