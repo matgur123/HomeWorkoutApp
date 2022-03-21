@@ -4,23 +4,19 @@
              x:Class="HomeWorkoutApp.Views.SignUp">
     <ContentPage.Content>
         <StackLayout Spacing="15" BackgroundColor="White">
-
-            <Label Margin="20,20,0,0" FontSize="31" FontAttributes="Bold" Text="Sign Up"/>
-            <Frame Margin="30,20,30,0" CornerRadius="11" BorderColor="Gray" HeightRequest="540" WidthRequest="60" Padding="0">
+            <Label Margin="20,20,0,0" Style="{StaticResource labelStyle}" FontSize="31" FontAttributes="Bold" Text="Sign up"/>
+            <Frame Margin="30,20,30,0" CornerRadius="11" BorderColor="Gray" HeightRequest="530" WidthRequest="60" Padding="0">
                 <StackLayout>
-
-                    <BoxView Margin="1,74,1,10"  HeightRequest="1" Color="Gray"/>
-                  
-                    <BoxView Margin="1,15,1,10"  HeightRequest="1" Color="Gray"/>
-
-                    <BoxView Margin="1,74,1,10"  HeightRequest="1" Color="Gray"/>
-               
-                    <BoxView Margin="1,15,1,10"  HeightRequest="1" Color="Gray"/>
+            
              
-                    <BoxView Margin="1,15,1,10"  HeightRequest="1" Color="Gray"/>
                   
                     <BoxView Margin="1,74,1,10"  HeightRequest="1" Color="Gray"/>
-         
+                    <local:MyEntry Margin="7" Placeholder="Email" PlaceholderColor="LightGray" Text="{Binding Email}" />
+                    <BoxView Margin="1,15,1,10"  HeightRequest="1" Color="Gray"/>
+                   
+                    <local:MyEntry Margin="7,10,20,-53" Placeholder="Password" PlaceholderColor="LightGray" Text="{Binding Password}" />
+                    <BoxView Margin="1,74,1,10"  HeightRequest="1" Color="Gray"/>
+                    <local:MyEntry Margin="7" Placeholder="Confirm password" PlaceholderColor="LightGray" Text="{Binding ConfirmPassword}" />
                 </StackLayout>
             </Frame>
 
@@ -30,7 +26,8 @@
                         TextColor="White" 
                         Text="Sign up"
                         FontSize="16"
-                      />
+                        BackgroundColor="{StaticResource primary}"
+                        Command="{Binding SignUpCommand}"/>
 
             <Grid Margin="0, 11, 0, 0">
                 <Grid.RowDefinitions>

@@ -11,7 +11,10 @@ using System.Text.Encodings.Web;
 using Xamarin.Forms;
 using Xamarin.Essentials;
 using System.IO;
+using Newtonsoft.Json;
+
 namespace HomeWorkoutApp.Services
+
 {
     class HomeWorkoutAPIProxy
     {
@@ -94,7 +97,7 @@ namespace HomeWorkoutApp.Services
                         PropertyNameCaseInsensitive = true
                     };
                     string content = await response.Content.ReadAsStringAsync();
-                    User u = JsonSerializer.Deserialize<User>(content, options);
+                    User u = System.Text.Json.JsonSerializer.Deserialize<User>(content, options);
                     return u;
                 }
                 else
@@ -108,5 +111,66 @@ namespace HomeWorkoutApp.Services
                 return null;
             }
         }
+        public async Task<bool?> EmailExists(string email)
+        {
+            try
+            {
+                HttpResponseMessage response = await this.client.GetAsync($"{this.baseUri}/email-exists?email={email}");
+                if (response.IsSuccessStatusCode)
+                {
+                    string content = await response.Content.ReadAsStringAsync();
+                    bool? b = JsonConvert.DeserializeObject<bool?>(content);
+                    return b;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return null;
+            }
+        }
+        public async Task<User> SignUp(string email, string password)
+        {
+            try
+            {
+                User a = new User()
+                {
+                    Email = email,
+                    Pass = password,
+                    ProfilePic = "default_pfp.jpg"
+                };
+
+                string json = JsonConvert.SerializeObject(a);
+                StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
+                string url = $"{this.baseUri}/signup";
+                HttpResponseMessage response = await this.client.PostAsync(url, content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    JsonSerializerSettings options = new JsonSerializerSettings
+                    {
+                        PreserveReferencesHandling = PreserveReferencesHandling.All
+                    };
+
+                    string jsonContent = await response.Content.ReadAsStringAsync();
+                    User returnedAccount = JsonConvert.DeserializeObject<User>(jsonContent, options);
+                    return returnedAccount;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return null;
+            }
+        }
+
     }
 }
