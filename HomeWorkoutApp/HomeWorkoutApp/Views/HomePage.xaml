@@ -15,33 +15,44 @@
         </AbsoluteLayout>
     </NavigationPage.TitleView>
     <ContentPage.Content>
- 
-        <StackLayout>
-            <Grid>
+        <ScrollView>
+            <StackLayout BackgroundColor="#000000">
+
+            <Grid RowSpacing="30">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="100" />
-                    <RowDefinition />
-                    <RowDefinition  />
-                    <RowDefinition/>
-                    <RowDefinition/>
+                    <RowDefinition   Height="42" />
+                    <RowDefinition Height="74"/>
+                    <RowDefinition Height="54" />
+                    <RowDefinition  Height="74"/>
+                        <RowDefinition  Height="74"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
+                <StackLayout Orientation="Horizontal" >
+                    <Button BackgroundColor="#0D0E0D" BorderColor="AliceBlue" BorderWidth="2" CornerRadius="2" HorizontalOptions="Start"  WidthRequest="134" TextColor="#77FF00" Grid.Row="0" Grid.Column="0" Text="Workouts" FontSize="16"  FontAttributes="bold" />
+                    <Button  BackgroundColor="#000000" HorizontalOptions="CenterAndExpand"  TextColor="#ffffff" Grid.Row="0" Grid.Column="1" Text="Discover" FontSize="16"  FontAttributes="bold"/>
+                    
+                </StackLayout>
 
-                <Button BackgroundColor="#000000" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Grid.Row="0" Grid.Column="0" Text="Workouts" FontSize="16"  FontAttributes="bold" />
-                <Button  BackgroundColor="#000000" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" Grid.Row="0" Grid.Column="1" Text="Discover" FontSize="16"  FontAttributes="bold"/>
+               
+                <Image  Source="Chest.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Line Stroke="#4F4F4F"
+      X2="260" Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="2" />
 
+                <Image  Source="Abs.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Line Stroke="#4F4F4F"
+      X2="260" Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="2" />
 
-                <Image  Source="blahblahblah" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="2"/>
-
-
-                <Image  Source="blahblahblah" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="2"/>
-
-                <Image  Source="blahblahblah" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="3"  Grid.Column="0" Grid.ColumnSpan="2"/>
-                <Image  Source="blahblahblah" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
-            </Grid>
+                <Image  Source="Legs.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="3"  Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Line Stroke="#4F4F4F"
+      X2="260" Grid.Row="3"  Grid.Column="0" Grid.ColumnSpan="2" />
+                <Image  Source="Arms.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <Line Stroke="#4F4F4F"
+      X2="260" Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="2" />
+                </Grid>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

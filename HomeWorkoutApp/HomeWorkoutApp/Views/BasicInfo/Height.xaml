@@ -9,7 +9,7 @@
         <StackLayout>
             <Label Text="Height" FontSize="40" FontAttributes="bold" TextTransform="Uppercase" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
             <Button Text="Click me"
-        Clicked="diffrent"
+       
         TextColor="#ffffff"
         TextTransform="Uppercase"
         FontAttributes="bold"

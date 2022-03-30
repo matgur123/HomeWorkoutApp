@@ -4,7 +4,7 @@
              x:Class="HomeWorkoutApp.Views.SignUp">
     <ContentPage.Content>
         <StackLayout Spacing="15" BackgroundColor="White">
-            <Label Margin="20,20,0,0" Style="{StaticResource labelStyle}" FontSize="31" FontAttributes="Bold" Text="Sign up"/>
+            <Label Margin="20,20,0,0"  FontSize="31" FontAttributes="Bold" Text="Sign up"/>
             <Frame Margin="30,20,30,0" CornerRadius="11" BorderColor="Gray" HeightRequest="530" WidthRequest="60" Padding="0">
                 <StackLayout>
             
@@ -25,8 +25,7 @@
                         TextColor="White" 
                         Text="Sign up"
                         FontSize="16"
-                        BackgroundColor="{StaticResource primary}"
-                        Command="{Binding SignUpCommand}"/>
+                        />
 
             <Grid Margin="0, 11, 0, 0">
                 <Grid.RowDefinitions>

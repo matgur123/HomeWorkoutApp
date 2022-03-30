@@ -12,7 +12,7 @@ namespace HomeWorkoutApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new StartPage());
+            MainPage = new NavigationPage(new HomePage());
         }
           public User CurrentUser { get; set; }
         public static bool IsDevEnv
