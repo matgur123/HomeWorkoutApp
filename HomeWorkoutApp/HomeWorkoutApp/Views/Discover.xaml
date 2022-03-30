@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="HomeWorkoutApp.Views.HomePage">
+             x:Class="HomeWorkoutApp.Views.Discover">
     <ContentPage.Content>
         <NavigationPage.TitleView>
             <absoulteLAyout VeritcalOptions="CenterAndExpand">
@@ -21,26 +21,19 @@
                     <RowDefinition />
                     <RowDefinition  />
                     <RowDefinition/>
-                    <RowDefinition/>
+                    
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-
                 <button background-color="#000000" horizontalOptions="startAndExpand" verticalOptions="startAndExpand" Grid.Row="0" Grid.Collum="0" Text="Workouts" fontSize="16" fontAtribuets="bold" />
                 <button background-color="#000000" horizontalOptions="EndAndExpand" verticalOptions="EndAndExpand" Grid.Row="0" Grid.Collum="1" Text="Discover" fontSize="16" fontAtribuets="bold"/>
 
-                // first image full body workout
-                <Image  Source="blahblahblah" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.collum="0,1"/>
-
-                // second image abs workout
-                <Image  Source="blahblahblah" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.collum="0,1"/>
-                //third image arm wokrout
-                <Image  Source="blahblahblah" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.collum="0,1"/>
-                //fourth image legs workout
-                <Image  Source="blahblahblah" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="4" Grid.collum="0,1"/>
-            </Grid>
+                <button image="articlesPic" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Grid.Row="1" Grid.collum="0"/>
+                <button image="manworkoingout" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Grid.Row="1" Grid.collum="1"/>
+                <image image="workoutDetails" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2,3" Grid.collum="0,1"/>
+                <Grid/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

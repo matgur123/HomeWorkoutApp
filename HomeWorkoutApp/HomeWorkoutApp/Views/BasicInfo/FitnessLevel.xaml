@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HomeWorkoutApp.Views.BasicInfo.FitnessLevel">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+
+                    <RowDefinition  />
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+           <Grid/>
+                <Label Text="Height" fontSize="40" fontattributes="bold" textTransform="uppercase" verticaloption="CenterAndExpand" WidthOption="CenterAndExpand" Grid.Row="0" Grid.Colloum="0,1,2,3,4"/>
+                <Label Text="Rate Your Fitness Level From 1-5 as 5 is the best" fontSize="20" fontattributes="bold" textTransform="uppercase" verticaloption="CenterAndExpand" WidthOption="CenterAndExpand" Grid.Row="1" Grid.Colloum="0,1,2,3,4"/>
+
+                <Button Text="1"
+        Clicked="diffrent"
+        TextColor="#ffffff"
+        TextTransform="Uppercase"
+        FontAttributes="bold"
+        FontSize="11"FontFamily="Monaco" BorderColor="#ffffff"BorderWidth="2"BackgroundColor="#14b32b" WidthRequest="40" HeightRequest="18" Margin="80,0,80,0"CornerRadius="10" Grid.Row ="2" Grid.Collum="0"
+        />
+                <Button Text="2"
+        Clicked="diffrent"
+        TextColor="#ffffff"
+        TextTransform="Uppercase"
+        FontAttributes="bold"
+        FontSize="11"FontFamily="Monaco" BorderColor="#ffffff"BorderWidth="2"BackgroundColor="#14b32b" WidthRequest="40" HeightRequest="18" Margin="80,0,80,0"CornerRadius="10" Grid.Row ="2" Grid.Collum="1"
+        />
+                <Button Text="3"
+        Clicked="diffrent"
+        TextColor="#ffffff"
+        TextTransform="Uppercase"
+        FontAttributes="bold"
+        FontSize="11"FontFamily="Monaco" BorderColor="#ffffff"BorderWidth="2"BackgroundColor="#14b32b" WidthRequest="40" HeightRequest="18" Margin="80,0,80,0"CornerRadius="10" Grid.Row ="2" Grid.Collum="2"
+        />
+                <Button Text="4"
+        Clicked="diffrent"
+        TextColor="#ffffff"
+        TextTransform="Uppercase"
+        FontAttributes="bold"
+        FontSize="11"FontFamily="Monaco" BorderColor="#ffffff"BorderWidth="2"BackgroundColor="#14b32b" WidthRequest="40" HeightRequest="18" Margin="80,0,80,0"CornerRadius="10" Grid.Row ="2" Grid.Collum="3"
+        />
+                <Button Text="5"
+        Clicked="diffrent"
+        TextColor="#ffffff"
+        TextTransform="Uppercase"
+        FontAttributes="bold"
+        FontSize="11"FontFamily="Monaco" BorderColor="#ffffff"BorderWidth="2"BackgroundColor="#14b32b" WidthRequest="40" HeightRequest="18" Margin="80,0,80,0"CornerRadius="10" Grid.Row ="2" Grid.Collum="4"
+        />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

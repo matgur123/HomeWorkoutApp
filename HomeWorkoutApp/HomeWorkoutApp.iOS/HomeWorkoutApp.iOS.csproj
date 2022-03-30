@@ -68,6 +68,9 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\ic_list_alt.zip" />
+    <BundleResource Include="Resources\ic_home.zip" />
+    <BundleResource Include="Resources\ic_explore.zip" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

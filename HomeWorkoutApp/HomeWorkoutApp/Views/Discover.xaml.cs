@@ -10,15 +10,14 @@ using Xamarin.Forms.Xaml;
 namespace HomeWorkoutApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : ContentPage
+    public partial class Discover : ContentPage
     {
-        public HomePage()
+        public Discover()
         {
-
             InitializeComponent();
+          
             NavigationPage.SetHasBackButton(this, false);
             ((NavigationPage)Application.current.HomePage).BarBackgroundColor = color.FromHex("#0080FF");
-
         }
     }
 }

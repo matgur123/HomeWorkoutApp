@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HomeWorkoutApp.Views.Articles.Legs">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefintion/>
+                    <RowDefinition  />
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefintion/>
+                    <RowDefinition  />
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <label Text="Why Do People Say to Never Skip a Leg Day?" FontAttribuets="bold" color="Black" VerticalOption="CenterAndExpand" Grid.Row="0"/>
+                <image source="Article one.PNG" VerticalOption="CenterAndExpand" WidthOptions="CenterAndExpand" Grid.Row="1"/>
+                <label Text="It's often said that you shouldn't skip a leg day. Leg workouts are important for several reasons, yet they are sometimes neglected in favor of upper-body workouts.
+Instead, you should follow an exercise program that supports a balanced body, which includes having a strong, stable foundation.
+Read on to take a look at some of the reasons you should work your legs daily, the benefits, and when it's okay to take a break." Grid.Row="2"/>
+                <label Text="Why you shouldn't skip leg day " FontAttribuets="bold" color="Black" VerticalOption="CenterAndExpand" Grid.Row="3"/>
+                <label Text="Leg workouts are an important aspect of a balanced, whole-body fitness routine that builds strength, speed, and stability.
+                        It's important to stay consistent with your leg workouts since these large muscles are an integral part of your overall fitness. Plus, it's easier for your body to adapt to the workouts and develop good habits that will help you to meet your fitness goals.
+                        Strong leg muscles keep your body balanced, which isn't possible if you focus solely on your upper body.
+                        Working your glutes, quads, and hamstrings with exercises such as deadlifts, squats, and lunges helps to maximize and boost athletic performance.
+                        Avoid overtraining your quads and balance your routine to target your glutes and hamstrings as well.
+                        Lower-body muscles create a strong, stable foundation. Rooting your lower body into the ground helps to create resistance that travels upward into your core and upper body.
+                        You utilize lower-body strength to do all types of movements, including upper-body movements such as throwing, batting, or reaching overhead." Grid.Row="4"
+/>
+                <Label Text="When you should skip it"FontAttribuets="bold" color="Black" VerticalOption="CenterAndExpand" Grid.Row="5"/>
+                <label Text="Go ahead and skip a leg workout day if you are very sore, have a potential injury, or are feeling under the weather. This may include feeling very tired.
+                    If you have a cold and are experiencing minor symptoms such as sneezing, a runny or congested nose, or a sore throat, you can still work out. But you should reduce the duration and intensity.
+                    Skip your workout altogether if your symptoms include chest congestion, a stomachache, or a dry cough. Other symptoms that warrant a break include fever, tiredness, or extensive muscle pain.
+                    Pushing yourself too much may slow down your healing trajectory or cause an injury, so take it easy when you're feeling unwell. Taking time off will help to ensure a speedy recovery." Grid.row="6"/>
+              
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -7,18 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace HomeWorkoutApp.Views
+namespace HomeWorkoutApp.Views.BasicInfo
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : ContentPage
+    public partial class Height : ContentPage
     {
-        public HomePage()
+        public Height()
         {
-
             InitializeComponent();
-            NavigationPage.SetHasBackButton(this, false);
-            ((NavigationPage)Application.current.HomePage).BarBackgroundColor = color.FromHex("#0080FF");
-
         }
     }
 }
