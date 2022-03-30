@@ -7,13 +7,13 @@
              x:Class="HomeWorkoutApp.Views.BasicInfo.Height">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Height" fontSize="40" fontattributes="bold" textTransform="uppercase" verticaloption="CenterAndExpand" WidthOption="CenterAndExpand"/>
+            <Label Text="Height" FontSize="40" FontAttributes="bold" TextTransform="Uppercase" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
             <Button Text="Click me"
         Clicked="diffrent"
         TextColor="#ffffff"
         TextTransform="Uppercase"
         FontAttributes="bold"
-        FontSize="11"FontFamily="Monaco" BorderColor="#ffffff"BorderWidth="2"BackgroundColor="#14b32b" WidthRequest="90" HeightRequest="35" Margin="80,0,80,0"CornerRadius="10" 
+        FontSize="11"  BorderColor="#ffffff" WidthRequest="90" HeightRequest="35" Margin="80,0,80,0" CornerRadius="10" 
         />
         </StackLayout>
     </ContentPage.Content>

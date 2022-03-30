@@ -11,12 +11,11 @@
              
                   
                     <BoxView Margin="1,74,1,10"  HeightRequest="1" Color="Gray"/>
-                    <local:MyEntry Margin="7" Placeholder="Email" PlaceholderColor="LightGray" Text="{Binding Email}" />
                     <BoxView Margin="1,15,1,10"  HeightRequest="1" Color="Gray"/>
                    
-                    <local:MyEntry Margin="7,10,20,-53" Placeholder="Password" PlaceholderColor="LightGray" Text="{Binding Password}" />
+                  
                     <BoxView Margin="1,74,1,10"  HeightRequest="1" Color="Gray"/>
-                    <local:MyEntry Margin="7" Placeholder="Confirm password" PlaceholderColor="LightGray" Text="{Binding ConfirmPassword}" />
+                  
                 </StackLayout>
             </Frame>
 

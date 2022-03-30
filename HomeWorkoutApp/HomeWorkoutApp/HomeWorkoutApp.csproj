@@ -51,7 +51,37 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Articles\ArticlesHome.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Articles\Legs.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\BasicInfo\FitnessLevel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\BasicInfo\Height.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\BasicInfo\Weight.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Discover.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\HomePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
     <None Update="Views\LogIn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\SignUp.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
     <None Update="Views\StartPage.xaml">

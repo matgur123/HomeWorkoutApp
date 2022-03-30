@@ -5,15 +5,17 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="HomeWorkoutApp.Views.Discover">
-    <ContentPage.Content>
-        <NavigationPage.TitleView>
-            <absoulteLAyout VeritcalOptions="CenterAndExpand">
-                <button image="ListOneResources" AbsoulouteLayout.LayoutFlags="positionPropotional" absoulouteLayout.LayoutBounds="0,0,40,40"/>
-                <button image="HomeOneresoyrces"  AbsoulouteLayout.LayoutFlags="positionPropotional" absoulouteLayout.LayoutBounds="0,1,40,40"/>
-                <button image="ExploreoneResources"  AbsoulouteLayout.LayoutFlags="positionPropotional" absoulouteLayout.LayoutBounds="0,0.8,40,40"/>
+    <NavigationPage.TitleView>
+        <AbsoluteLayout VerticalOptions="CenterAndExpand">
+            <Button Image="ListOneResources" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,0,40,40"/>
+            <Button Image="HomeOneresoyrces"  AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,1,40,40"/>
+            <Button Image="ExploreoneResources" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,0.8,40,40"/>
 
-            </absoulteLAyout>
-        </NavigationPage.TitleView>
+        </AbsoluteLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+
         <StackLayout>
             <Grid>
                 <Grid.RowDefinitions>
@@ -27,13 +29,14 @@
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <button background-color="#000000" horizontalOptions="startAndExpand" verticalOptions="startAndExpand" Grid.Row="0" Grid.Collum="0" Text="Workouts" fontSize="16" fontAtribuets="bold" />
-                <button background-color="#000000" horizontalOptions="EndAndExpand" verticalOptions="EndAndExpand" Grid.Row="0" Grid.Collum="1" Text="Discover" fontSize="16" fontAtribuets="bold"/>
+                <Button BackgroundColor="#000000" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Grid.Row="0" Grid.Column="0" Text="Workouts" FontSize="16" FontAttributes="bold" />
+                <Button BackgroundColor="#000000" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Grid.Row="0" Grid.Column="1" Text="Discover" FontSize="16" FontAttributes="bold"/>
 
-                <button image="articlesPic" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Grid.Row="1" Grid.collum="0"/>
-                <button image="manworkoingout" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Grid.Row="1" Grid.collum="1"/>
-                <image image="workoutDetails" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2,3" Grid.collum="0,1"/>
-                <Grid/>
+                <Button Image="articlesPic" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Grid.Row="1" Grid.Column="0"/>
+                <Button Image="manworkoingout" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Grid.Row="1" Grid.Column="1"/>
+                <Image Source="workoutDetails" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.RowSpan="2"  Grid.Column="0" Grid.ColumnSpan="2"/>
+
+                </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

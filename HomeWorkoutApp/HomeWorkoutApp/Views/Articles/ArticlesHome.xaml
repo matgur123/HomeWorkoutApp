@@ -5,20 +5,22 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="HomeWorkoutApp.Views.Articles.ArticlesHome">
-    <ContentPage.Content>
-        <NavigationPage.TitleView>
-            <absoulteLAyout VeritcalOptions="CenterAndExpand">
-                <button image="ListOneResources" AbsoulouteLayout.LayoutFlags="positionPropotional" absoulouteLayout.LayoutBounds="0,0,40,40"/>
-                <button image="HomeOneresoyrces"  AbsoulouteLayout.LayoutFlags="positionPropotional" absoulouteLayout.LayoutBounds="0,1,40,40"/>
-                <button image="ExploreoneResources"  AbsoulouteLayout.LayoutFlags="positionPropotional" absoulouteLayout.LayoutBounds="0,0.8,40,40"/>
 
-            </absoulteLAyout>
-        </NavigationPage.TitleView>
+    <NavigationPage.TitleView>
+        <AbsoluteLayout VerticalOptions="CenterAndExpand">
+            <Button Image="ListOneResources" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,0,40,40"/>
+            <Button Image="HomeOneresoyrces"  AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,1,40,40"/>
+            <Button Image="ExploreoneResources" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,0.8,40,40"/>
+
+        </AbsoluteLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        
         <StackLayout>
            
                 <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefintion/>
+                    <RowDefinition/>
                     <RowDefinition  />
                     <RowDefinition/>
                     <RowDefinition/>
@@ -27,11 +29,11 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
             </Grid>
-            <label FontSize="30"  TextTransform="Uppercase" FontFamily="to be decided" textColor="black" Text="Articles" FontAttributes="Bold" horizontalOptions="startAndExpand" verticalOptions="startAndExpand"/>
+            <Label FontSize="30"  TextTransform="Uppercase" FontFamily="to be decided" TextColor="black" Text="Articles" FontAttributes="Bold" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"/>
            
-            <button image="Legs"  horizontalOptions="startAndExpand" verticalOptions="startAndExpand" Grid.Row="1" Grid.Collum="0" />
-            <button image="abs"  horizontalOptions="startAndExpand" verticalOptions="startAndExpand" Grid.Row="2" Grid.Collum="0" />
-            <button image="Arms"  horizontalOptions="startAndExpand" verticalOptions="startAndExpand" Grid.Row="3" Grid.Collum="0" />
+            <Button Image="Legs"  HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Grid.Row="1" Grid.Column="0" />
+            <Button Image="abs"  HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Grid.Row="2" Grid.Column="0" />
+            <Button Image="Arms"  HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Grid.Row="3" Grid.Column="0" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

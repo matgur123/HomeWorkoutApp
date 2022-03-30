@@ -23,45 +23,46 @@
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-           <Grid/>
-                <Label Text="Height" fontSize="40" fontattributes="bold" textTransform="uppercase" verticaloption="CenterAndExpand" WidthOption="CenterAndExpand" Grid.Row="0" Grid.Colloum="0,1,2,3,4"/>
-                <Label Text="Rate Your Fitness Level From 1-5 as 5 is the best" fontSize="20" fontattributes="bold" textTransform="uppercase" verticaloption="CenterAndExpand" WidthOption="CenterAndExpand" Grid.Row="1" Grid.Colloum="0,1,2,3,4"/>
+                <Grid/>
+                <Label Text="Height" FontSize="40" FontAttributes="bold" TextTransform="Uppercase" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5"/>
+                <Label Text="Rate Your Fitness Level From 1-5 as 5 is the best" FontSize="20" FontAttributes="bold" TextTransform="Uppercase" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5"/>
 
                 <Button Text="1"
         Clicked="diffrent"
         TextColor="#ffffff"
         TextTransform="Uppercase"
         FontAttributes="bold"
-        FontSize="11"FontFamily="Monaco" BorderColor="#ffffff"BorderWidth="2"BackgroundColor="#14b32b" WidthRequest="40" HeightRequest="18" Margin="80,0,80,0"CornerRadius="10" Grid.Row ="2" Grid.Collum="0"
+        FontSize="11"  BorderColor="#ffffff" WidthRequest="40" HeightRequest="18" Margin="80,0,80,0"  CornerRadius="10" Grid.Row ="2" Grid.Column="0"
         />
                 <Button Text="2"
         Clicked="diffrent"
         TextColor="#ffffff"
         TextTransform="Uppercase"
         FontAttributes="bold"
-        FontSize="11"FontFamily="Monaco" BorderColor="#ffffff"BorderWidth="2"BackgroundColor="#14b32b" WidthRequest="40" HeightRequest="18" Margin="80,0,80,0"CornerRadius="10" Grid.Row ="2" Grid.Collum="1"
+        FontSize="11" FontFamily="Monaco" BorderColor="#ffffff" BorderWidth="2" BackgroundColor="#14b32b" WidthRequest="40" HeightRequest="18" Margin="80,0,80,0" CornerRadius="10" Grid.Row ="2" Grid.Column="1"
         />
                 <Button Text="3"
         Clicked="diffrent"
         TextColor="#ffffff"
         TextTransform="Uppercase"
         FontAttributes="bold"
-        FontSize="11"FontFamily="Monaco" BorderColor="#ffffff"BorderWidth="2"BackgroundColor="#14b32b" WidthRequest="40" HeightRequest="18" Margin="80,0,80,0"CornerRadius="10" Grid.Row ="2" Grid.Collum="2"
+        FontSize="11" FontFamily="Monaco" BorderColor="#ffffff" BorderWidth="2" BackgroundColor="#14b32b" WidthRequest="40" HeightRequest="18" Margin="80,0,80,0" CornerRadius="10" Grid.Row ="2" Grid.Column="2"
         />
                 <Button Text="4"
         Clicked="diffrent"
         TextColor="#ffffff"
         TextTransform="Uppercase"
         FontAttributes="bold"
-        FontSize="11"FontFamily="Monaco" BorderColor="#ffffff"BorderWidth="2"BackgroundColor="#14b32b" WidthRequest="40" HeightRequest="18" Margin="80,0,80,0"CornerRadius="10" Grid.Row ="2" Grid.Collum="3"
+        FontSize="11" FontFamily="Monaco" BorderColor="#ffffff" BorderWidth="2" BackgroundColor="#14b32b" WidthRequest="40" HeightRequest="18" Margin="80,0,80,0" CornerRadius="10" Grid.Row ="2" Grid.Column="3"
         />
                 <Button Text="5"
         Clicked="diffrent"
         TextColor="#ffffff"
         TextTransform="Uppercase"
         FontAttributes="bold"
-        FontSize="11"FontFamily="Monaco" BorderColor="#ffffff"BorderWidth="2"BackgroundColor="#14b32b" WidthRequest="40" HeightRequest="18" Margin="80,0,80,0"CornerRadius="10" Grid.Row ="2" Grid.Collum="4"
+        FontSize="11" FontFamily="Monaco" BorderColor="#ffffff" BorderWidth="2" BackgroundColor="#14b32b" WidthRequest="40" HeightRequest="18" Margin="80,0,80,0" CornerRadius="10" Grid.Row ="2" Grid.Column="4"
         />
+                </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

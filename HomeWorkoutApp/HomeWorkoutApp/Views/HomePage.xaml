@@ -4,16 +4,18 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="HomeWorkoutApp.Views.HomePage">
-    <ContentPage.Content>
-        <NavigationPage.TitleView>
-            <absoulteLAyout VeritcalOptions="CenterAndExpand">
-                <button image="ListOneResources" AbsoulouteLayout.LayoutFlags="positionPropotional" absoulouteLayout.LayoutBounds="0,0,40,40"/>
-                <button image="HomeOneresoyrces"  AbsoulouteLayout.LayoutFlags="positionPropotional" absoulouteLayout.LayoutBounds="0,1,40,40"/>
-                <button image="ExploreoneResources"  AbsoulouteLayout.LayoutFlags="positionPropotional" absoulouteLayout.LayoutBounds="0,0.8,40,40"/>
+             x:Class="HomeWorkoutApp.Views.HomePage"
+             >
+    <NavigationPage.TitleView>
+        <AbsoluteLayout VerticalOptions="CenterAndExpand">
+            <Button Image="ListOneResources" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,0,40,40"/>
+            <Button Image="HomeOneresoyrces"  AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,1,40,40"/>
+            <Button Image="ExploreoneResources" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,0.8,40,40"/>
 
-            </absoulteLAyout>
-        </NavigationPage.TitleView>
+        </AbsoluteLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+ 
         <StackLayout>
             <Grid>
                 <Grid.RowDefinitions>
@@ -28,18 +30,17 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <button background-color="#000000" horizontalOptions="startAndExpand" verticalOptions="startAndExpand" Grid.Row="0" Grid.Collum="0" Text="Workouts" fontSize="16" fontAtribuets="bold" />
-                <button background-color="#000000" horizontalOptions="EndAndExpand" verticalOptions="EndAndExpand" Grid.Row="0" Grid.Collum="1" Text="Discover" fontSize="16" fontAtribuets="bold"/>
+                <Button BackgroundColor="#000000" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Grid.Row="0" Grid.Column="0" Text="Workouts" FontSize="16"  FontAttributes="bold" />
+                <Button  BackgroundColor="#000000" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" Grid.Row="0" Grid.Column="1" Text="Discover" FontSize="16"  FontAttributes="bold"/>
 
-                // first image full body workout
-                <Image  Source="blahblahblah" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.collum="0,1"/>
 
-                // second image abs workout
-                <Image  Source="blahblahblah" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.collum="0,1"/>
-                //third image arm wokrout
-                <Image  Source="blahblahblah" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.collum="0,1"/>
-                //fourth image legs workout
-                <Image  Source="blahblahblah" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="4" Grid.collum="0,1"/>
+                <Image  Source="blahblahblah" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="2"/>
+
+
+                <Image  Source="blahblahblah" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="2"/>
+
+                <Image  Source="blahblahblah" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="3"  Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Image  Source="blahblahblah" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

@@ -7,7 +7,7 @@
              x:Class="HomeWorkoutApp.Views.BasicInfo.Weight">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Weight" fontSize="40" fontattributes="bold" textTransform="uppercase" verticaloption="CenterAndExpand" WidthOption="CenterAndExpand"/>
+            <Label Text="Weight" FontSize="40" FontAttributes="bold" TextTransform="Uppercase" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
             <Button Text="Click me"
         Clicked="diffrent"
         TextColor="#ffffff"

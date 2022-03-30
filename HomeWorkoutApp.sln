@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkoutApp.Android", "H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkoutApp.iOS", "HomeWorkoutApp\HomeWorkoutApp.iOS\HomeWorkoutApp.iOS.csproj", "{5F4EAE44-4ABB-47E6-A5AA-7ED9791877A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkoutApp", "HomeWorkoutApp\HomeWorkoutApp\HomeWorkoutApp.csproj", "{B2C01D8E-3FCF-4152-8547-68F5C2CC008D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWorkoutApp", "HomeWorkoutApp\HomeWorkoutApp\HomeWorkoutApp.csproj", "{B2C01D8E-3FCF-4152-8547-68F5C2CC008D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
