@@ -23,7 +23,7 @@
                 <Label Text="HomeWorkout" FontFamily="Secular One" FontSize="21" TextColor="white" FontAttributes="Bold" 
                     VerticalOptions="CenterAndExpand" 
                     HorizontalOptions="CenterAndExpand" Grid.Row="0" />
-
+ 
 
                 <Frame Padding="4,0" CornerRadius="2" Grid.Row="2" BackgroundColor="White" >
 
