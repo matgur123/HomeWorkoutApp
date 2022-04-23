@@ -15,28 +15,39 @@
     </NavigationPage.TitleView>
 
     <ContentPage.Content>
-
-        <StackLayout>
+        <ScrollView>
+            <StackLayout BackgroundColor="#000000">
             <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="100" />
-                    <RowDefinition />
-                    <RowDefinition  />
-                    <RowDefinition/>
-                    
+                
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="200" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="200" />
+
                 </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-                <Button BackgroundColor="#000000" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Grid.Row="0" Grid.Column="0" Text="Workouts" FontSize="16" FontAttributes="bold" />
-                <Button BackgroundColor="#000000" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Grid.Row="0" Grid.Column="1" Text="Discover" FontSize="16" FontAttributes="bold"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Orientation="Horizontal" >
+                        <Button BackgroundColor="#0D0E0D" HorizontalOptions="Start"  WidthRequest="204"  TextColor="#ffffff" Grid.Row="0" Grid.Column="0" Text="Workouts" FontSize="16"  FontAttributes="bold" />
+                        <Button  BackgroundColor="#000000" BorderColor="AliceBlue"  BorderWidth="2" CornerRadius="2"  HorizontalOptions="CenterAndExpand" WidthRequest="204"   Grid.Row="0" Grid.Column="1" TextColor="#77FF00" Text="Discover" FontSize="16"  FontAttributes="bold"/>
+                    </StackLayout>
+                    <Label Text="Articles" HorizontalOptions="CenterAndExpand"  TextDecorations="Underline"  FontSize="30" TextColor="#ffffff" TextTransform="Uppercase" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <ImageButton Source="Articles.jpg" Clicked="OnButtonClicked" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand"  WidthRequest="294" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"  />
 
-                <Button Image="articlesPic" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Grid.Row="1" Grid.Column="0"/>
-                <Button Image="manworkoingout" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Grid.Row="1" Grid.Column="1"/>
-                <Image Source="workoutDetails" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.RowSpan="2"  Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label Text="Workouts" HorizontalOptions="CenterAndExpand"  TextDecorations="Underline"  FontSize="30" TextColor="#ffffff" TextTransform="Uppercase" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <ImageButton Source="WorkingOut.jpg" Clicked="OnButtonClicked2" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand"  WidthRequest="294" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"  />
 
-                </Grid>
+                <Label Text="YourInformation" HorizontalOptions="CenterAndExpand"  TextDecorations="Underline"  FontSize="30" TextColor="#ffffff" TextTransform="Uppercase" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <ImageButton Source="WorkingOut.jpg" Clicked="OnButtonClicked2" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand"  WidthRequest="294" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"  />
+            </Grid>
+           
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

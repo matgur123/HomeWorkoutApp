@@ -20,5 +20,9 @@ namespace HomeWorkoutApp.Views
             //((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.FromHex("#0080FF");
 
         }
+        void OnButtonClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Discover());
+        }
     }
 }

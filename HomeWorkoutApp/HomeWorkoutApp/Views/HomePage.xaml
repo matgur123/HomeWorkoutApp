@@ -8,9 +8,9 @@
              >
     <NavigationPage.TitleView>
         <AbsoluteLayout VerticalOptions="CenterAndExpand">
-            <Button Image="ListOneResources" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,0,40,40"/>
-            <Button Image="HomeOneresoyrces"  AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,1,40,40"/>
-            <Button Image="ExploreoneResources" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,0.8,40,40"/>
+            <Button Image="Home.png" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,0,40,40"/>
+            <Button Image="Home.png"  AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,1,40,40"/>
+            <Button Image="Home.png" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,0.8,40,40"/>
 
         </AbsoluteLayout>
     </NavigationPage.TitleView>
@@ -21,36 +21,43 @@
             <Grid RowSpacing="30">
                 <Grid.RowDefinitions>
                     <RowDefinition   Height="42" />
-                    <RowDefinition Height="74"/>
-                    <RowDefinition Height="54" />
-                    <RowDefinition  Height="74"/>
-                        <RowDefinition  Height="74"/>
-                </Grid.RowDefinitions>
+                    <RowDefinition Height="24"/>
+                    <RowDefinition Height="104" />
+                        <RowDefinition Height="24"/>
+                        <RowDefinition  Height="104"/>
+                        <RowDefinition Height="24"/>
+                        <RowDefinition  Height="104"/>
+                        <RowDefinition Height="24"/>
+                        <RowDefinition  Height="104"/>
+                    </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 <StackLayout Orientation="Horizontal" >
                     <Button BackgroundColor="#0D0E0D" BorderColor="AliceBlue" BorderWidth="2" CornerRadius="2" HorizontalOptions="Start"  WidthRequest="134" TextColor="#77FF00" Grid.Row="0" Grid.Column="0" Text="Workouts" FontSize="16"  FontAttributes="bold" />
-                    <Button  BackgroundColor="#000000" HorizontalOptions="CenterAndExpand"  TextColor="#ffffff" Grid.Row="0" Grid.Column="1" Text="Discover" FontSize="16"  FontAttributes="bold"/>
+                        <Button  BackgroundColor="#000000" Clicked="OnButtonClicked" HorizontalOptions="CenterAndExpand"  TextColor="#ffffff" Grid.Row="0" Grid.Column="1" Text="Discover" FontSize="16"  FontAttributes="bold"/>
                     
                 </StackLayout>
 
-               
-                <Image  Source="Chest.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="2"/>
+
+                    <ImageButton  Source="Chest.jpg" BorderColor="White" BorderWidth="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="2" Clicked="OnButtonClicked"/>
                 <Line Stroke="#4F4F4F"
       X2="260" Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="2" />
 
-                <Image  Source="Abs.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="2"/>
-                <Line Stroke="#4F4F4F"
-      X2="260" Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="2" />
-
-                <Image  Source="Legs.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="3"  Grid.Column="0" Grid.ColumnSpan="2"/>
-                <Line Stroke="#4F4F4F"
-      X2="260" Grid.Row="3"  Grid.Column="0" Grid.ColumnSpan="2" />
-                <Image  Source="Arms.jpg" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <ImageButton  Source="Legs.jpg" BorderColor="White" BorderWidth="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="2" Clicked="OnButtonClicked"/>
                     <Line Stroke="#4F4F4F"
-      X2="260" Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="2" />
+      X2="260" Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="2" />
+
+                    <ImageButton  Source="Arms.jpg" BorderColor="White" BorderWidth="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="6"  Grid.Column="0" Grid.ColumnSpan="2" Clicked="OnButtonClicked"/>
+                    <Line Stroke="#4F4F4F"
+      X2="260" Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="2" />
+                    <ImageButton  Source="Back.jpg" BorderColor="White" BorderWidth="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="8"  Grid.Column="0" Grid.ColumnSpan="2" Clicked="OnButtonClicked"/>
+                    <Line Stroke="#4F4F4F"
+      X2="260" Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="2" />
+
+
+
                 </Grid>
         </StackLayout>
         </ScrollView>

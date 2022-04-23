@@ -17,7 +17,15 @@ namespace HomeWorkoutApp.Views
             InitializeComponent();
           
             NavigationPage.SetHasBackButton(this, false);
-            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.FromHex("#0080FF");
+            //((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.FromHex("#0080FF");
+        }
+        void OnButtonClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Articles.ArticlesHome());
+        }
+        void OnButtonClicked2(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new HomePage());
         }
     }
 }

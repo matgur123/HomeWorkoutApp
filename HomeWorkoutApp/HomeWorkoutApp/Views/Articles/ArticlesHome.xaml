@@ -21,7 +21,7 @@
                 <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition/>
-                    <RowDefinition  />
+                    <RowDefinition Height="200" />
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
@@ -29,9 +29,10 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
             </Grid>
-            <Label FontSize="30"  TextTransform="Uppercase" FontFamily="to be decided" TextColor="black" Text="Articles" FontAttributes="Bold" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"/>
-           
-            <Button Image="Legs"  HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Grid.Row="1" Grid.Column="0" />
+            <Label FontSize="30"  TextTransform="Uppercase"  TextColor="black" Text="Articles" TextDecorations="Underline" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Grid.Row="0" Grid.Column="0" />
+
+            <Label Text="Articles" HorizontalOptions="CenterAndExpand"  TextDecorations="Underline"  FontSize="30" TextColor="#ffffff" TextTransform="Uppercase" Grid.Row="1" Grid.Column="0" />
+            <Button Image="Legs"  HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Grid.Row="2" Grid.Column="0" />
             <Button Image="abs"  HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Grid.Row="2" Grid.Column="0" />
             <Button Image="Arms"  HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Grid.Row="3" Grid.Column="0" />
         </StackLayout>
